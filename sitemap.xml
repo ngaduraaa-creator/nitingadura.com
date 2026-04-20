@@ -62,6 +62,13 @@
   <url><loc>https://nitingadura.com/sell-ur.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://nitingadura.com/sell-bn.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
+  <!-- Legal & Disclosure pages -->
+  <url><loc>https://nitingadura.com/disclosures/</loc><lastmod>2026-04-20</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/disclosures/fair-housing.html</loc><lastmod>2026-04-20</lastmod><changefreq>yearly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/disclosures/agency-disclosure.html</loc><lastmod>2026-04-20</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/disclosures/standard-operating-procedures.html</loc><lastmod>2026-04-20</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/disclosures/property-disclosures.html</loc><lastmod>2026-04-20</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+
   <!-- Short-tail area pages + entity pages -->
   <url><loc>https://nitingadura.com/about.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
   <url><loc>https://nitingadura.com/faq.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.92</priority></url>

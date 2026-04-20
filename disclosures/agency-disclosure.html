@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency Disclosure — NY RPL §443 | Nitin Gadura Real Estate</title>
+  <meta name="description" content="New York State required Agency Disclosure (NY RPL §443) — Disclosure Regarding Real Estate Agency Relationships. Nitin Gadura, Gadura Real Estate LLC.">
+  <link rel="canonical" href="https://nitingadura.com/disclosures/agency-disclosure.html">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .disclosure-hero {
+      background: linear-gradient(135deg, #0F1A40 0%, #1a2d6e 100%);
+      padding: 5rem 0 4rem;
+      color: #fff;
+    }
+    .disclosure-hero .breadcrumb {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 1rem;
+    }
+    .disclosure-hero .breadcrumb a {
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+    }
+    .disclosure-hero .breadcrumb a:hover { color: #5edd9a; }
+    .disclosure-hero .breadcrumb span { margin: 0 6px; }
+    .disclosure-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      max-width: 760px;
+    }
+    .disclosure-hero p {
+      color: rgba(255,255,255,0.78);
+      font-size: 1.05rem;
+      max-width: 680px;
+      line-height: 1.75;
+    }
+    .law-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.9);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .disclosure-body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
+    .legal-notice {
+      background: #fff8e6;
+      border: 1px solid #f5c842;
+      border-left: 4px solid #e6a800;
+      border-radius: 0 10px 10px 0;
+      padding: 1.25rem 1.75rem;
+      margin-bottom: 3rem;
+    }
+    .legal-notice p {
+      margin: 0;
+      font-size: 0.93rem;
+      color: #4a3800;
+      line-height: 1.7;
+    }
+    .agency-type-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 1.5rem;
+      margin: 1.75rem 0 2.5rem;
+    }
+    .agency-card {
+      background: #f7f9fc;
+      border: 1px solid #e2e6f0;
+      border-radius: 12px;
+      padding: 1.75rem;
+      position: relative;
+    }
+    .agency-card.featured {
+      border-color: #0F1A40;
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(15,26,64,0.1);
+    }
+    .agency-card-label {
+      display: inline-block;
+      background: #0F1A40;
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 0.85rem;
+    }
+    .agency-card-label.buyer { background: #00A651; }
+    .agency-card-label.dual { background: #e67e22; }
+    .agency-card-label.broker { background: #5a6480; }
+    .agency-card-label.nonagent { background: #95a5a6; }
+    .agency-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: #0F1A40;
+      margin-bottom: 0.75rem;
+    }
+    .agency-card p {
+      font-size: 0.88rem;
+      color: #2d3452;
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+    .duties-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .duties-list li {
+      font-size: 0.85rem;
+      color: #2d3452;
+      padding: 5px 0;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.55;
+    }
+    .duties-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #00A651;
+      font-weight: 700;
+    }
+    .disclosure-section {
+      margin-bottom: 3.5rem;
+    }
+    .section-number {
+      display: inline-block;
+      background: #0F1A40;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 0.75rem;
+    }
+    .disclosure-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      color: #0F1A40;
+      margin-bottom: 1rem;
+    }
+    .disclosure-section p {
+      color: #2d3452;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-size: 0.96rem;
+    }
+    .formal-disclosure {
+      background: #fff;
+      border: 2px solid #0F1A40;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin: 1.5rem 0;
+    }
+    .formal-disclosure .header {
+      text-align: center;
+      border-bottom: 1px solid #e2e6f0;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .formal-disclosure .header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: #0F1A40;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+    .formal-disclosure .header p {
+      font-size: 0.82rem;
+      color: #5a6480;
+      margin: 0;
+    }
+    .nar-settlement-box {
+      background: linear-gradient(135deg, #f0f4ff, #e8eeff);
+      border: 1px solid #c0caf5;
+      border-left: 4px solid #4a6cf7;
+      border-radius: 0 10px 10px 0;
+      padding: 1.5rem 1.75rem;
+      margin: 1.5rem 0;
+    }
+    .nar-settlement-box h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #2030a0;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .nar-settlement-box p {
+      font-size: 0.92rem;
+      color: #1a2470;
+      line-height: 1.7;
+      margin: 0 0 0.5rem;
+    }
+    .firm-policy-box {
+      background: #f0fbf5;
+      border: 1px solid #a8e6c0;
+      border-radius: 12px;
+      padding: 1.75rem 2rem;
+      margin: 1.5rem 0;
+    }
+    .firm-policy-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: #0a3020;
+      margin-bottom: 0.75rem;
+    }
+    .firm-policy-box p {
+      font-size: 0.93rem;
+      color: #1a4a30;
+      line-height: 1.7;
+      margin: 0 0 0.5rem;
+    }
+    .contact-cta {
+      background: linear-gradient(135deg, #0F1A40, #1a2d6e);
+      color: #fff;
+      border-radius: 14px;
+      padding: 2.5rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .contact-cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      margin-bottom: 0.75rem;
+    }
+    .contact-cta p {
+      color: rgba(255,255,255,0.8);
+      max-width: 560px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.75;
+    }
+    .btn-green {
+      display: inline-block;
+      background: #00A651;
+      color: #fff;
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-green:hover { background: #008f44; }
+    .divider { border: none; border-top: 1px solid #edf0f6; margin: 2.5rem 0; }
+  </style>
+</head>
+<body>
+<div class="top-bar"><div class="container"><div class="top-bar-inner">
+  <span>Licensed NYS Real Estate Salesperson &nbsp;|&nbsp; Gadura Real Estate LLC</span>
+  <span>Call or text: <a href="tel:9177050132">(917) 705-0132</a></span>
+</div></div></div>
+<header class="header"><div class="container header-inner">
+  <a href="/"><div class="logo-text">Nitin <span>Gadura</span></div><div class="logo-sub">Real Estate Agent</div></a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/situations/">Seller Situations</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/disclosures/" class="active">Legal &amp; Disclosures</a>
+    <a href="/#contact" class="nav-cta">Call (917) 705-0132</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mobile-nav" id="mobile-nav">
+  <button class="close-btn" id="close-nav" aria-label="Close">&times;</button>
+  <a href="/">Home</a>
+  <a href="/about.html">About Nitin</a>
+  <a href="/disclosures/">Legal &amp; Disclosures</a>
+  <a href="/faq.html">FAQ</a>
+  <a href="tel:9177050132" style="color:#00A651;font-weight:700;">(917) 705-0132</a>
+</div>
+
+<main>
+  <section class="disclosure-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a><span>/</span>
+        <a href="/disclosures/">Disclosures</a><span>/</span>
+        Agency Disclosure
+      </div>
+      <div class="law-badge">NY Real Property Law §443</div>
+      <h1>Agency Disclosure — NY Real Property Law §443</h1>
+      <p>New York State requires that this disclosure be provided before entering into a buyer or seller representation agreement, and prior to the first showing of any property. Please read carefully.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="disclosure-body">
+
+      <div class="legal-notice">
+        <p><strong>Legal Requirement:</strong> New York State law (NY Real Property Law §443) requires that before entering into a buyer or seller representation agreement, and prior to the first showing of a property to a prospective buyer, Gadura Real Estate LLC must provide this disclosure. By receiving and acknowledging this disclosure, you understand the nature of the agency relationship being offered. Please read it carefully and ask questions before proceeding.</p>
+      </div>
+
+      <!-- Formal Disclosure Document -->
+      <div class="formal-disclosure">
+        <div class="header">
+          <h3>Disclosure Regarding Real Estate Agency Relationships</h3>
+          <p>As required by New York Real Property Law §443 &nbsp;|&nbsp; Gadura Real Estate LLC</p>
+        </div>
+
+        <p style="font-size:0.92rem;color:#2d3452;line-height:1.8;margin-bottom:1.5rem;">This disclosure is provided to help you understand the different types of agency relationships that exist in New York real estate transactions. New York law requires real estate licensees acting as agents of buyers or sellers of property to advise potential buyers or sellers with whom they work of the nature of their agency relationship and the rights and obligations it creates.</p>
+
+        <div class="disclosure-section">
+          <div class="section-number">Type A</div>
+          <h2>Seller's Agent (Listing Agent)</h2>
+          <p>A seller's agent (also known as a listing agent) represents the seller exclusively. The seller's agent owes the seller the following fiduciary duties:</p>
+          <div class="agency-card featured">
+            <span class="agency-card-label">Seller's Agent</span>
+            <h3>Working Solely for the Seller</h3>
+            <p>A seller's agent is retained by and works exclusively on behalf of the seller. All duties run to the seller.</p>
+            <ul class="duties-list">
+              <li>Undivided loyalty to the seller — must put the seller's interests above all others</li>
+              <li>Must disclose all material information to the seller that may affect the transaction</li>
+              <li>Must negotiate the best possible price and terms for the seller</li>
+              <li>Must maintain confidentiality of the seller's information</li>
+              <li>May NOT disclose the seller's motivation for selling without the seller's permission</li>
+              <li>May NOT disclose that the seller will accept less than the asking price without the seller's permission</li>
+              <li>May NOT disclose any information the seller has asked to keep confidential</li>
+              <li>Must present all offers to the seller in a timely manner</li>
+            </ul>
+            <p style="font-size:0.83rem;color:#5a6480;margin-top:0.75rem;margin-bottom:0;"><em>Note: A buyer dealing with a seller's agent is a customer, not a client, and is NOT represented by that agent.</em></p>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="disclosure-section">
+          <div class="section-number">Type B</div>
+          <h2>Buyer's Agent</h2>
+          <p>A buyer's agent represents the buyer exclusively. The buyer's agent owes the buyer the following fiduciary duties:</p>
+          <div class="agency-card featured">
+            <span class="agency-card-label buyer">Buyer's Agent</span>
+            <h3>Working Solely for the Buyer</h3>
+            <p>A buyer's agent is retained by and works exclusively on behalf of the buyer. All duties run to the buyer.</p>
+            <ul class="duties-list">
+              <li>Undivided loyalty to the buyer — must put the buyer's interests above all others</li>
+              <li>Must disclose all material information to the buyer that may affect the transaction</li>
+              <li>Must negotiate the best possible price and terms for the buyer</li>
+              <li>Must maintain confidentiality of the buyer's information</li>
+              <li>May NOT disclose the buyer's motivation for buying without the buyer's permission</li>
+              <li>May NOT disclose that the buyer will pay more than offered without the buyer's permission</li>
+              <li>May NOT disclose the buyer's financial capacity beyond what is necessary</li>
+              <li>Must conduct due diligence on properties on behalf of the buyer</li>
+            </ul>
+            <p style="font-size:0.83rem;color:#5a6480;margin-top:0.75rem;margin-bottom:0;"><em>Note: A seller dealing with a buyer's agent is a customer, not a client, and is NOT represented by that agent.</em></p>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="disclosure-section">
+          <div class="section-number">Type C</div>
+          <h2>Broker's Agent</h2>
+          <div class="agency-card">
+            <span class="agency-card-label broker">Broker's Agent</span>
+            <h3>Working for a Listing or Buyer's Agent's Firm</h3>
+            <p>A broker's agent does not have a direct relationship with either the buyer or seller but works on behalf of another licensee's client. For example, a cooperating broker who assists a buyer's agent still serves the buyer — the broker's agent's duties run through the agent to the agent's client.</p>
+            <ul class="duties-list">
+              <li>Works on behalf of (and owes duties to) the other agent's client</li>
+              <li>Can assist a buyer's agent in finding or showing properties, while working for the buyer</li>
+              <li>Can assist a seller's agent in marketing or showing a listing, while working for the seller</li>
+              <li>Does not independently represent either the buyer or seller</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="disclosure-section">
+          <div class="section-number">Type D</div>
+          <h2>Dual Agent</h2>
+          <div class="agency-card">
+            <span class="agency-card-label dual">Dual Agent</span>
+            <h3>Representing Both Buyer and Seller — With Limitations</h3>
+            <p>A dual agent represents both the buyer and the seller in the same transaction. Dual agency is legal in New York but creates inherent limitations on the duties that can be provided to each party. Both parties must give their informed written consent before a dual agency relationship can exist.</p>
+            <ul class="duties-list">
+              <li>A dual agent cannot provide undivided loyalty to either party</li>
+              <li>A dual agent cannot disclose to the buyer the minimum price the seller will accept</li>
+              <li>A dual agent cannot disclose to the seller the maximum price the buyer will pay</li>
+              <li>A dual agent cannot disclose motivation or confidential information of either party to the other</li>
+              <li>Both parties must give written consent acknowledging they understand the limitations of dual agency</li>
+              <li>The dual agent must remain neutral and cannot advocate for either side in negotiations</li>
+            </ul>
+            <p style="font-size:0.83rem;color:#e67e22;background:#fff8f0;padding:8px 12px;border-radius:6px;margin-top:0.75rem;margin-bottom:0;"><strong>Important:</strong> If dual agency arises, you will be notified and asked to provide written consent at that time. You have the right to refuse dual agency representation.</p>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="disclosure-section">
+          <div class="section-number">Type E</div>
+          <h2>Disclosed Dual Agent</h2>
+          <div class="agency-card">
+            <span class="agency-card-label dual">Disclosed Dual Agent</span>
+            <h3>Both Parties Agree in Writing to Dual Representation</h3>
+            <p>A disclosed dual agent is created when both the buyer and the seller agree in writing, with full knowledge, that the agent represents both sides of the transaction simultaneously. The agent discloses all relationships and both parties accept them.</p>
+            <ul class="duties-list">
+              <li>Requires affirmative written consent from both buyer and seller</li>
+              <li>Agent must remain neutral and cannot advocate for either party</li>
+              <li>Both parties understand and accept the limitations on confidentiality and advocacy</li>
+              <li>Agent retains general duties of care, honesty, and disclosure of material facts</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="disclosure-section">
+          <div class="section-number">Type F</div>
+          <h2>Non-Agent (Transaction Broker)</h2>
+          <div class="agency-card">
+            <span class="agency-card-label nonagent">Non-Agent</span>
+            <h3>Facilitating the Transaction Without Representing Either Party</h3>
+            <p>A non-agent (also called a transaction broker) does not represent either the buyer or the seller and has no fiduciary duties to either party. The non-agent assists in facilitating a real estate transaction but cannot advocate for either side.</p>
+            <ul class="duties-list">
+              <li>No fiduciary duties owed to either buyer or seller</li>
+              <li>Can facilitate paperwork, coordinate logistics, and assist with administrative tasks</li>
+              <li>Cannot negotiate on behalf of either party</li>
+              <li>Cannot advise either party on price or strategy</li>
+              <li>Neither party is represented — both are customers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <!-- Firm Policy -->
+      <div class="disclosure-section">
+        <div class="section-number">Firm Policy</div>
+        <h2>Gadura Real Estate LLC Agency Policy</h2>
+        <div class="firm-policy-box">
+          <h3>Our Standard Practice</h3>
+          <p>Gadura Real Estate LLC represents both buyers and sellers in separate, exclusive agency relationships. When representing a seller, Nitin Gadura acts as the seller's agent. When representing a buyer, Nitin Gadura acts as the buyer's agent.</p>
+          <p>Before proceeding with any representation, clients will be asked to sign the appropriate representation agreement — either an Exclusive Right to Sell Listing Agreement (for sellers) or a Buyer Representation Agreement (for buyers). The type of agency relationship, the term, and the compensation arrangement will be fully specified in writing before any services begin.</p>
+          <p>If a situation arises in which Gadura Real Estate LLC would represent both a buyer and a seller in the same transaction (dual agency), both parties will be immediately notified and asked for written consent. You have the right to decline dual agency at any time.</p>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <!-- NAR Settlement -->
+      <div class="disclosure-section">
+        <div class="section-number">2024 Update</div>
+        <h2>Compensation Disclosure — NAR Settlement (August 17, 2024)</h2>
+        <div class="nar-settlement-box">
+          <h3>Important Change Effective August 17, 2024</h3>
+          <p>Pursuant to the NAR Settlement Agreement (Burnett et al. v. National Association of Realtors), the following changes are now in effect for all real estate transactions:</p>
+          <p><strong>1. Buyer Representation Agreement Required:</strong> Buyers must enter into a written Buyer Representation Agreement before touring any property. This agreement will specify the term, geographic area, property type, and compensation arrangement for buyer representation services.</p>
+          <p><strong>2. Compensation Not in MLS:</strong> Buyer broker compensation is no longer included as a field in MLS listings. Sellers are not obligated to offer buyer agent compensation through the MLS.</p>
+          <p><strong>3. Compensation is Negotiable:</strong> Compensation for buyer representation is fully negotiable and will be disclosed in the written Buyer Representation Agreement. Buyers and sellers may negotiate compensation arrangements directly.</p>
+          <p><strong>4. Seller Concessions:</strong> A seller may still offer concessions (including amounts that a buyer may use for buyer agent compensation) as part of their listing, disclosed outside of MLS.</p>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <h2>Questions About Agency?</h2>
+        <p>Understanding agency relationships is important. Nitin Gadura will explain exactly who he represents and what duties he owes before any agreement is signed. Call or text with questions.</p>
+        <a href="tel:9177050132" class="btn-green">(917) 705-0132 — Call or Text</a>
+        <div style="margin-top:1.5rem;font-size:0.8rem;color:rgba(255,255,255,0.5);">
+          <a href="/disclosures/" style="color:rgba(255,255,255,0.5);text-decoration:none;">&#8592; Back to All Disclosures</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer style="background:#0F1A40;color:rgba(255,255,255,0.7);padding:3rem 0 1.5rem;">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px;">Nitin <span style="color:#00A651;">Gadura</span></div>
+        <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;">Real Estate Agent</div>
+        <p>Licensed NYS Real Estate Salesperson at Gadura Real Estate LLC.</p>
+        <a href="tel:9177050132" style="color:#00A651;font-size:1.15rem;font-weight:700;display:block;margin-top:16px;">(917) 705-0132</a>
+      </div>
+      <div><h4>Legal &amp; Disclosures</h4><ul>
+        <li><a href="/disclosures/">All Disclosures</a></li>
+        <li><a href="/disclosures/fair-housing.html">Fair Housing Policy</a></li>
+        <li><a href="/disclosures/agency-disclosure.html">Agency Disclosure (RPL §443)</a></li>
+        <li><a href="/disclosures/standard-operating-procedures.html">Standard Operating Procedures</a></li>
+        <li><a href="/disclosures/property-disclosures.html">Property Disclosures</a></li>
+      </ul></div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About Nitin</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/situations/">Seller Situations</a></li>
+        <li><a href="https://gadurarealestate.com" target="_blank">Gadura Real Estate LLC</a></li>
+      </ul></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.12);padding-top:1.4rem;margin-top:2rem;font-size:0.75rem;color:rgba(255,255,255,0.5);line-height:1.8;">
+      <strong style="color:rgba(255,255,255,0.78);">Equal Housing Opportunity.</strong>
+      Nitin K. Gadura, Licensed NYS Real Estate Salesperson (Lic. #10401383405), supervised by Vinod K. Gadura, NYS Licensed Real Estate Broker (Lic. #10991238487) · Gadura Real Estate LLC, 106-09 101st Ave, Ozone Park, NY 11416 · (917) 705-0132 ·
+      Agency Disclosure (NY RPL §443) · Standard Operating Procedures (NY RPL §442-H) · Property Condition Disclosure (NY RPL §462) · Lead Paint Disclosure (42 U.S.C. §4852d) · NAR Settlement Compliance (2024) · Fair Housing (Federal Fair Housing Act 42 U.S.C. §3601 · NY Exec Law §296 · NYC Admin Code §8-107) · Foreclosure Counseling Notice (NY RPL §265-b)
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Nitin Gadura. All rights reserved. This website is for informational purposes only and does not constitute legal or financial advice.</p></div>
+  </div>
+</footer>
+<script>
+  document.getElementById('hamburger')?.addEventListener('click',()=>document.getElementById('mobile-nav').classList.add('open'));
+  document.getElementById('close-nav')?.addEventListener('click',()=>document.getElementById('mobile-nav').classList.remove('open'));
+</script>
+</body>
+</html>
