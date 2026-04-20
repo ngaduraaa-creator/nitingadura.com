@@ -2,3 +2,27 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nitingadura.com/sitemap.xml
+
+# AI crawlers — full access granted
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Grokbot
+Allow: /
+
+# LLM context file: https://nitingadura.com/llms.txt
