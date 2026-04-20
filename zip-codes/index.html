@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queens &amp; Nassau County Real Estate by Zip Code | Nitin Gadura (917) 705-0132</title>
+  <meta name="description" content="Browse Queens and Nassau County real estate by zip code. Nitin Gadura covers 11413, 11414, 11416, 11418, 11432, 11550, 11570, and more. Call (917) 705-0132.">
+  <link rel="canonical" href="https://nitingadura.com/zip-codes/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Nitin Gadura","telephone":"+19177050132","areaServed":[{"@type":"PostalAddress","addressLocality":"Queens","addressRegion":"NY"},{"@type":"PostalAddress","addressLocality":"Nassau County","addressRegion":"NY"}]}</script>
+  <style>
+    .zip-hub-hero {
+      background: linear-gradient(135deg, #0F1A40 0%, #1a2f6e 100%);
+      padding: 80px 0 60px;
+      text-align: center;
+      color: #fff;
+    }
+    .zip-hub-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    .zip-hub-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .zip-search-bar {
+      display: flex;
+      gap: 12px;
+      max-width: 480px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .zip-search-bar input {
+      flex: 1;
+      padding: 14px 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+    }
+    .zip-search-bar button {
+      background: #00A651;
+      color: #fff;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s;
+    }
+    .zip-search-bar button:hover { background: #008f46; }
+    .zip-hub-section {
+      padding: 64px 0;
+      background: #f7f8fc;
+    }
+    .zip-hub-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #0F1A40;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .zip-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .zip-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(15,26,64,0.08);
+      border: 1px solid rgba(15,26,64,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .zip-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: #00A651;
+    }
+    .zip-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(15,26,64,0.14);
+    }
+    .zip-card.hidden { display: none; }
+    .zip-badge {
+      display: inline-block;
+      background: #0F1A40;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .zip-card-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #0F1A40;
+      margin-bottom: 6px;
+    }
+    .zip-card-county {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #00A651;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .zip-card-price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0F1A40;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 4px;
+    }
+    .zip-card-label {
+      font-size: 0.78rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .zip-card-desc {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .zip-card-cta {
+      color: #00A651;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .zip-card-cta::after { content: '→'; }
+    .no-results {
+      text-align: center;
+      padding: 48px;
+      color: #888;
+      font-size: 1rem;
+      display: none;
+    }
+    .filter-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 8px 20px;
+      border-radius: 24px;
+      border: 2px solid #0F1A40;
+      background: transparent;
+      color: #0F1A40;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: #0F1A40;
+      color: #fff;
+    }
+    .cta-band {
+      background: #0F1A40;
+      padding: 56px 0;
+      text-align: center;
+    }
+    .cta-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .cta-band p { color: rgba(255,255,255,0.75); margin-bottom: 28px; }
+    .cta-band a.btn-primary {
+      background: #00A651;
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .cta-band a.btn-primary:hover { background: #008f46; }
+  </style>
+</head>
+<body>
+<div class="top-bar"><div class="container"><div class="top-bar-inner">
+  <span>Licensed NYS Real Estate Salesperson &nbsp;|&nbsp; Gadura Real Estate LLC</span>
+  <span>Call or text: <a href="tel:9177050132">(917) 705-0132</a></span>
+</div></div></div>
+<header class="header"><div class="container header-inner">
+  <a href="/"><div class="logo-text">Nitin <span>Gadura</span></div><div class="logo-sub">Real Estate Agent</div></a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/home-valuation/">Free Valuation</a>
+    <a href="/situations/">Seller Situations</a>
+    <a href="/selling/">Selling Guides</a>
+    <a href="/zip-codes/" class="active">Zip Codes</a>
+    <a href="/#contact" class="nav-cta">Call (917) 705-0132</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mobile-nav" id="mobile-nav">
+  <button class="close-btn" id="close-nav" aria-label="Close">&times;</button>
+  <a href="/">Home</a>
+  <a href="/situations/">Seller Situations</a>
+  <a href="/selling/">Selling Guides</a>
+  <a href="/zip-codes/">Zip Codes</a>
+  <a href="tel:9177050132" style="color:#00A651;font-weight:700;">(917) 705-0132</a>
+</div>
+
+<main>
+  <section class="zip-hub-hero">
+    <div class="container">
+      <nav aria-label="Breadcrumb" style="margin-bottom:20px;font-size:0.85rem;color:rgba(255,255,255,0.6);">
+        <a href="/" style="color:rgba(255,255,255,0.6);text-decoration:none;">Home</a> &rsaquo; Zip Codes
+      </nav>
+      <h1>Queens &amp; Nassau County Real Estate by Zip Code</h1>
+      <p>Hyperlocal market knowledge for every neighborhood Nitin Gadura serves — from Springfield Gardens to Rockville Centre.</p>
+      <div class="zip-search-bar">
+        <input type="text" id="zip-search" placeholder="Search by zip code or neighborhood…" aria-label="Search zip codes">
+        <button onclick="filterZips()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="zip-hub-section">
+    <div class="container">
+      <h2>Browse All Neighborhoods</h2>
+      <div class="filter-row" role="group" aria-label="Filter by county">
+        <button class="filter-btn active" onclick="filterByCounty('all', this)">All Areas</button>
+        <button class="filter-btn" onclick="filterByCounty('queens', this)">Queens</button>
+        <button class="filter-btn" onclick="filterByCounty('nassau', this)">Nassau County</button>
+      </div>
+
+      <div class="zip-card-grid" id="zip-grid">
+
+        <a href="/zip-codes/11413.html" class="zip-card" data-zip="11413" data-county="queens" data-name="Springfield Gardens">
+          <div class="zip-badge">11413</div>
+          <div class="zip-card-name">Springfield Gardens</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$650K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Caribbean and South Asian community with A train and JFK access. Semi-detached homes on tree-lined streets.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11414.html" class="zip-card" data-zip="11414" data-county="queens" data-name="Howard Beach">
+          <div class="zip-badge">11414</div>
+          <div class="zip-card-name">Howard Beach</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$750K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Tight-knit waterfront community along Jamaica Bay. A train access, strong sense of neighborhood pride.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11415.html" class="zip-card" data-zip="11415" data-county="queens" data-name="Kew Gardens">
+          <div class="zip-badge">11415</div>
+          <div class="zip-card-name">Kew Gardens</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$800K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Quiet, tree-lined suburb with E/F train access. Brick co-ops and attached homes near Forest Hills.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11416.html" class="zip-card" data-zip="11416" data-county="queens" data-name="Ozone Park">
+          <div class="zip-badge">11416</div>
+          <div class="zip-card-name">Ozone Park</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$700K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Nitin's home base. Guyanese, South Asian and Italian community. A train, near JFK, strong rental demand.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11417.html" class="zip-card" data-zip="11417" data-county="queens" data-name="Woodhaven">
+          <div class="zip-badge">11417</div>
+          <div class="zip-card-name">Woodhaven / Ozone Park Border</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$680K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Diverse working-class community. J/Z train on Jamaica Ave, Forest Park access, brick attached homes.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11418.html" class="zip-card" data-zip="11418" data-county="queens" data-name="Richmond Hill">
+          <div class="zip-badge">11418</div>
+          <div class="zip-card-name">Richmond Hill</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$680K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Large Guyanese, Punjabi and Indo-Caribbean community. Many multi-family homes, Liberty Ave corridor, J train.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11419.html" class="zip-card" data-zip="11419" data-county="queens" data-name="South Richmond Hill">
+          <div class="zip-badge">11419</div>
+          <div class="zip-card-name">South Richmond Hill</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$670K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Predominantly South Asian — Guyanese and Punjabi. Affordable entry point with strong community ties.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11420.html" class="zip-card" data-zip="11420" data-county="queens" data-name="South Ozone Park">
+          <div class="zip-badge">11420</div>
+          <div class="zip-card-name">South Ozone Park</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$650K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Caribbean/Indo-Caribbean community near JFK. A train, semi-detached homes, Rockaway Blvd corridor.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11421.html" class="zip-card" data-zip="11421" data-county="queens" data-name="Woodhaven">
+          <div class="zip-badge">11421</div>
+          <div class="zip-card-name">Woodhaven</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$660K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Historic character homes next to Forest Park. J/Z train, Liberty Ave shopping, strong community feel.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11432.html" class="zip-card" data-zip="11432" data-county="queens" data-name="Jamaica">
+          <div class="zip-badge">11432</div>
+          <div class="zip-card-name">Jamaica</div>
+          <div class="zip-card-county">Queens County</div>
+          <div class="zip-card-price">~$600K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Major transit hub with LIRR, E/J/Z and AirTrain. Rapidly developing — strong investment potential.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11550.html" class="zip-card" data-zip="11550" data-county="nassau" data-name="Hempstead">
+          <div class="zip-badge">11550</div>
+          <div class="zip-card-name">Hempstead</div>
+          <div class="zip-card-county">Nassau County</div>
+          <div class="zip-card-price">~$550K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Nassau County's most affordable entry point. LIRR access, strong rental demand, diverse community.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+        <a href="/zip-codes/11570.html" class="zip-card" data-zip="11570" data-county="nassau" data-name="Rockville Centre">
+          <div class="zip-badge">11570</div>
+          <div class="zip-card-name">Rockville Centre</div>
+          <div class="zip-card-county">Nassau County</div>
+          <div class="zip-card-price">~$850K</div>
+          <div class="zip-card-label">Avg Home Price (2024)</div>
+          <div class="zip-card-desc">Affluent suburb with top-rated schools and walkable village center. LIRR to Penn Station in 35 minutes.</div>
+          <div class="zip-card-cta">View neighborhood</div>
+        </a>
+
+      </div>
+      <div class="no-results" id="no-results">No neighborhoods match your search. Try a zip code like "11416" or a name like "Jamaica".</div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Not Sure Which Neighborhood Is Right for You?</h2>
+      <p>Call or text Nitin — hyperlocal knowledge across all 12 zip codes, no pressure.</p>
+      <a href="tel:9177050132" class="btn-primary">(917) 705-0132 — Call Nitin</a>
+    </div>
+  </section>
+</main>
+
+<footer style="background:#0F1A40;color:rgba(255,255,255,0.7);padding:3rem 0 1.5rem;">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px;">Nitin <span style="color:#00A651;">Gadura</span></div>
+        <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;">Real Estate Agent</div>
+        <p>Serving Queens, Brooklyn, and Long Island with expert real estate guidance.</p>
+        <a href="tel:9177050132" style="color:#00A651;font-size:1.15rem;font-weight:700;display:block;margin-top:16px;">(917) 705-0132</a>
+      </div>
+      <div><h4>Queens Zip Codes</h4><ul>
+        <li><a href="/zip-codes/11413.html">11413 — Springfield Gardens</a></li>
+        <li><a href="/zip-codes/11414.html">11414 — Howard Beach</a></li>
+        <li><a href="/zip-codes/11416.html">11416 — Ozone Park</a></li>
+        <li><a href="/zip-codes/11418.html">11418 — Richmond Hill</a></li>
+        <li><a href="/zip-codes/11419.html">11419 — South Richmond Hill</a></li>
+        <li><a href="/zip-codes/11432.html">11432 — Jamaica</a></li>
+      </ul></div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/situations/">Seller Situations</a></li>
+        <li><a href="/selling/">Selling Guides</a></li>
+        <li><a href="/home-valuation/">Free Valuation</a></li>
+        <li><a href="https://gadurarealestate.com" target="_blank">Gadura Real Estate</a></li>
+      </ul></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.12);padding-top:1.4rem;margin-top:2rem;font-size:0.8rem;color:rgba(255,255,255,0.55);line-height:1.7;">
+      <strong style="color:rgba(255,255,255,0.78);">Equal Housing Opportunity.</strong>
+      Nitin K. Gadura, Licensed NYS Real Estate Salesperson (Lic. #10401383405), supervised by Vinod K. Gadura, NYS Licensed Real Estate Broker (Lic. #10991238487) · Gadura Real Estate LLC, 106-09 101st Ave, Ozone Park, NY 11416 ·
+      Agency Disclosure (NY RPL §443) · PCDS (NY RPL §462) · Fair Housing (NY Exec Law §296 incl. Section 8) · NAR Settlement (2024)
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Nitin Gadura. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger')?.addEventListener('click',()=>document.getElementById('mobile-nav').classList.add('open'));
+  document.getElementById('close-nav')?.addEventListener('click',()=>document.getElementById('mobile-nav').classList.remove('open'));
+
+  document.getElementById('zip-search').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') filterZips();
+  });
+
+  function filterZips() {
+    const query = document.getElementById('zip-search').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.zip-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const zip = card.dataset.zip;
+      const name = card.dataset.name.toLowerCase();
+      const matches = !query || zip.includes(query) || name.includes(query);
+      card.classList.toggle('hidden', !matches);
+      if (matches) visible++;
+    });
+    document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  function filterByCounty(county, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('zip-search').value = '';
+    const cards = document.querySelectorAll('.zip-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const matches = county === 'all' || card.dataset.county === county;
+      card.classList.toggle('hidden', !matches);
+      if (matches) visible++;
+    });
+    document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+  }
+</script>
+</body>
+</html>

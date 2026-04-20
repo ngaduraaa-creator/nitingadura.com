@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nitingadura.com/</loc><lastmod>2026-04-14</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://nitingadura.com/home-valuation/</loc><lastmod>2026-04-14</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+
+  <!-- Core pages -->
+  <url><loc>https://nitingadura.com/</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://nitingadura.com/home-valuation/</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+
+  <!-- Situations hub + 15 pages -->
+  <url><loc>https://nitingadura.com/situations/</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-inherited-house-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-house-during-divorce-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-house-avoid-foreclosure-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-behind-on-mortgage-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-rental-property-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-house-job-relocation-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-house-downsizing-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-estate-probate-house-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-house-as-is-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-house-fast-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-co-op-apartment-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-condo-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-multi-family-home-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-house-tax-lien-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/situations/sell-house-tired-landlord-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- Selling guides hub + 7 pages -->
+  <url><loc>https://nitingadura.com/selling/</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://nitingadura.com/selling/queens-home-selling-timeline.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://nitingadura.com/selling/home-selling-costs-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://nitingadura.com/selling/best-time-sell-house-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://nitingadura.com/selling/capital-gains-tax-selling-home-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://nitingadura.com/selling/sell-house-without-realtor-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://nitingadura.com/selling/sell-co-op-apartment-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://nitingadura.com/selling/first-time-home-seller-guide-queens-ny.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+
+  <!-- Zip code hub + 12 pages -->
+  <url><loc>https://nitingadura.com/zip-codes/</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11413.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11414.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11415.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11416.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11417.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11418.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11419.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11420.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11421.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11432.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11550.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nitingadura.com/zip-codes/11570.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Resources hub + 4 pages -->
+  <url><loc>https://nitingadura.com/resources/</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://nitingadura.com/resources/ny-home-seller-legal-checklist.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
+  <url><loc>https://nitingadura.com/resources/queens-school-districts-home-values.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
+  <url><loc>https://nitingadura.com/resources/queens-first-time-homebuyer-programs.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
+  <url><loc>https://nitingadura.com/resources/queens-real-estate-glossary.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
+
+  <!-- Multilingual pages -->
+  <url><loc>https://nitingadura.com/sell-es.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/sell-hi.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/sell-pa.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/sell-ur.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://nitingadura.com/sell-bn.html</loc><lastmod>2026-04-20</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
 </urlset>

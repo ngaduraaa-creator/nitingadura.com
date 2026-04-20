@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queens School Districts & Home Values — What You Need to Know | Nitin Gadura</title>
+  <meta name="description" content="How Queens school zones affect home prices — top-rated schools, value premiums of 10–20%, how to verify your school zone, and what buyers look for in Queens neighborhoods.">
+  <link rel="canonical" href="https://nitingadura.com/resources/queens-school-districts-home-values.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .page-hero {
+      background: linear-gradient(135deg, #0F1A40 0%, #1a2a5e 100%);
+      color: #fff;
+      padding: 4rem 0 3rem;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    .page-hero h1 span { color: #00A651; }
+    .page-hero p {
+      color: rgba(255,255,255,0.8);
+      font-size: 1.05rem;
+      max-width: 640px;
+      line-height: 1.7;
+    }
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 1rem;
+    }
+    .breadcrumb a { color: #00A651; text-decoration: none; }
+    .content-section {
+      padding: 4rem 0 5rem;
+      background: #f8f9fb;
+    }
+    .content-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .content-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 14px rgba(15,26,64,0.08);
+    }
+    .content-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #0F1A40;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    .content-card p {
+      color: #444;
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+    .content-card p:last-child { margin-bottom: 0; }
+    .school-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .school-card {
+      background: #f4f8ff;
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+      border-left: 4px solid #0F1A40;
+    }
+    .school-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0F1A40;
+      margin-bottom: 0.3rem;
+    }
+    .school-card .school-meta {
+      font-size: 0.82rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .school-card p {
+      font-size: 0.88rem;
+      color: #555;
+      line-height: 1.55;
+      margin: 0;
+    }
+    .premium-stat {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      background: #edf7f1;
+      border-radius: 8px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .premium-stat .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #00A651;
+      flex-shrink: 0;
+    }
+    .premium-stat .stat-text {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.5;
+    }
+    .steps-list {
+      counter-reset: steps;
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
+    }
+    .steps-list li {
+      counter-increment: steps;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.6;
+    }
+    .steps-list li::before {
+      content: counter(steps);
+      background: #0F1A40;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .notice-box {
+      background: #fffbec;
+      border-left: 4px solid #d4a853;
+      border-radius: 6px;
+      padding: 1.2rem 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .notice-box p {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0;
+      line-height: 1.65;
+    }
+    .notice-box strong { color: #0F1A40; }
+    .cta-box {
+      background: #0F1A40;
+      color: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .cta-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    .cta-box p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; }
+    .cta-box a {
+      display: inline-block;
+      background: #00A651;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.05rem;
+      transition: background 0.2s;
+    }
+    .cta-box a:hover { background: #008f45; }
+  </style>
+</head>
+<body>
+<div class="top-bar"><div class="container"><div class="top-bar-inner">
+  <span>Licensed NYS Real Estate Salesperson &nbsp;|&nbsp; Gadura Real Estate LLC</span>
+  <span>Call or text: <a href="tel:9177050132">(917) 705-0132</a></span>
+</div></div></div>
+<header class="header"><div class="container header-inner">
+  <a href="/"><div class="logo-text">Nitin <span>Gadura</span></div><div class="logo-sub">Real Estate Agent</div></a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/home-valuation/">Free Valuation</a>
+    <a href="/situations/">Seller Situations</a>
+    <a href="/selling/">Selling Guides</a>
+    <a href="/zip-codes/">Zip Codes</a>
+    <a href="/#contact" class="nav-cta">Call (917) 705-0132</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mobile-nav" id="mobile-nav">
+  <button class="close-btn" id="close-nav" aria-label="Close">&times;</button>
+  <a href="/">Home</a>
+  <a href="/situations/">Seller Situations</a>
+  <a href="/selling/">Selling Guides</a>
+  <a href="/zip-codes/">Zip Codes</a>
+  <a href="tel:9177050132" style="color:#00A651;font-weight:700;">(917) 705-0132</a>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/resources/">Resources</a> &rsaquo; School Districts &amp; Home Values</div>
+      <h1>Queens School Districts &amp; <span>Home Values</span></h1>
+      <p>How school zones shape property prices in Queens — and what every buyer and seller needs to know before making a decision.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="content-wrap">
+
+        <div class="content-card">
+          <h2>Why School Zones Matter for Home Values</h2>
+          <p>In Queens, as in most of New York City, school zone assignments are tied to your home's address — not a choice parents make after moving in. This means that two nearly identical homes on different sides of a school boundary can sell for meaningfully different prices. For buyers with children, the assigned school can be a non-negotiable factor that drives demand — and therefore pricing — in specific blocks and neighborhoods.</p>
+          <p>Research consistently shows that homes zoned for higher-performing schools sell faster and at premium prices. In Queens markets, this premium can range from a modest 5–8% above comparable homes in adjacent zones all the way to 15–20% in neighborhoods where access to a top-rated elementary or high school is highly contested.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>The School Premium: What the Numbers Look Like</h2>
+          <div class="premium-stat">
+            <div class="stat-num">10–15%</div>
+            <div class="stat-text">Typical home value premium for properties zoned to a top-rated Queens elementary school compared to similar homes in adjacent zones.</div>
+          </div>
+          <div class="premium-stat">
+            <div class="stat-num">15–20%</div>
+            <div class="stat-text">Premium observed in highly competitive zones — particularly Forest Hills and Bayside — where demand from families consistently outpaces supply.</div>
+          </div>
+          <div class="premium-stat">
+            <div class="stat-num">3–6 days</div>
+            <div class="stat-text">Homes in top-rated school zones in Queens typically spend fewer days on market, with more competitive offer situations.</div>
+          </div>
+          <p style="margin-top:1.2rem;font-size:0.88rem;color:#777;">Note: Premiums vary by neighborhood, market conditions, and individual property factors. These figures are illustrative of observed trends and not guaranteed outcomes.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>Notable Queens Schools That Influence Home Values</h2>
+
+          <div class="school-grid">
+
+            <div class="school-card">
+              <h3>PS 196 — The Grand Central</h3>
+              <div class="school-meta">Forest Hills &bull; District 28 &bull; Grades K–6</div>
+              <p>One of the most sought-after elementary zones in Queens. Forest Hills homes zoned for PS 196 consistently command premiums and see strong buyer competition.</p>
+            </div>
+
+            <div class="school-card">
+              <h3>PS 90 — Horace Mann</h3>
+              <div class="school-meta">Ozone Park / Forest Hills Area &bull; District 27</div>
+              <p>Well-regarded elementary serving parts of the Ozone Park and Richmond Hill corridor. Proximity to this school zone is a selling point in the district.</p>
+            </div>
+
+            <div class="school-card">
+              <h3>PS 178 — Holliswood School</h3>
+              <div class="school-meta">Holliswood / Jamaica Estates &bull; District 26</div>
+              <p>District 26 consistently ranks among the best in NYC. Homes in this zone — particularly in Jamaica Estates and Hollis Hills — carry a strong school-zone premium.</p>
+            </div>
+
+            <div class="school-card">
+              <h3>IS 93 — Ridgewood</h3>
+              <div class="school-meta">Ridgewood / Ozone Park Area &bull; Grades 6–8</div>
+              <p>A middle school with solid test scores serving parts of western Queens. Families in this zone benefit from a strong pipeline into well-regarded high schools.</p>
+            </div>
+
+            <div class="school-card">
+              <h3>PS 50 — Talfourd Lawn</h3>
+              <div class="school-meta">Jamaica &bull; District 29</div>
+              <p>Serves the Jamaica area; buyers seeking value with access to a solid elementary often target homes in this zone as an entry point to the neighborhood.</p>
+            </div>
+
+            <div class="school-card">
+              <h3>Francis Lewis High School</h3>
+              <div class="school-meta">Fresh Meadows &bull; District 26 High School</div>
+              <p>One of Queens' highest-ranked large public high schools. Homes in the Francis Lewis zone (District 26, eastern Queens) are among the most sought-after for families with teenagers.</p>
+            </div>
+
+            <div class="school-card">
+              <h3>Townsend Harris High School</h3>
+              <div class="school-meta">Flushing &bull; NYC Specialized / Screened</div>
+              <p>Ranked among the top public high schools in the US, Townsend Harris is screened (not strictly zone-based) but its location in Flushing adds prestige to the surrounding area.</p>
+            </div>
+
+            <div class="school-card">
+              <h3>Bayside High School</h3>
+              <div class="school-meta">Bayside &bull; District 26</div>
+              <p>A large, well-regarded comprehensive high school in northeastern Queens. The Bayside and Douglaston markets are partly driven by this school zone for high schoolers.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h2>How to Find Your School Zone</h2>
+          <p>School zone boundaries in NYC are set by the NYC Department of Education and can change — sometimes significantly — in a single school year. Always verify directly with the NYCDOE before making or accepting any offer based on a specific school assignment.</p>
+          <ol class="steps-list">
+            <li>Visit <strong>myschools.nyc</strong> and use the "Find a School" tool with your exact address to see your assigned zoned school at each level (elementary, middle, high school).</li>
+            <li>Call or email the specific school district office directly — for example, District 27 serves Ozone Park, Richmond Hill, and Howard Beach; District 26 serves Bayside, Hollis Hills, and Jamaica Estates.</li>
+            <li>Ask your real estate attorney to confirm the school zone assignment in writing if it is a material factor in your purchase decision. This can be included as a contract contingency in some cases.</li>
+            <li>Note that screened and specialized schools (like Townsend Harris, Queens High School for the Sciences) are not zone-based — they admit students city-wide based on academic criteria.</li>
+          </ol>
+
+          <div class="notice-box">
+            <p><strong>Important Disclaimer:</strong> School zone boundaries can and do change. The schools referenced on this page are illustrative of neighborhoods and trends — they are not a guarantee of any buyer's actual school assignment. Always verify directly with the NYC Department of Education (nyc.gov/doe) using the current address before relying on any school zone information in a real estate decision.</p>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h2>For Sellers: Leveraging Your School Zone</h2>
+          <p>If your home sits in a desirable school zone, your marketing strategy should highlight it prominently — but carefully, in compliance with Fair Housing laws. You can state the assigned school and direct buyers to verify zoning themselves; you cannot make promises about school quality or enrollment guarantees.</p>
+          <p>Consider the following in your pricing and marketing strategy:</p>
+          <ul style="color:#444;line-height:1.75;padding-left:1.5rem;">
+            <li>Identify which buyer demographic in your price range is most likely to have school-age children — and time your listing accordingly (spring is peak family-buying season).</li>
+            <li>In your listing description, note the assigned elementary, middle, and high school for the address, and include the school district number.</li>
+            <li>If your home is near — but not in — a top school zone, be accurate. Buyers will verify, and a misrepresentation on school zone is a serious liability.</li>
+            <li>Ask me to run a Comparative Market Analysis (CMA) that specifically controls for school zone — this gives you the clearest picture of how much your zone is actually worth.</li>
+          </ul>
+        </div>
+
+        <div class="cta-box">
+          <h2>Want to Know What Your School Zone Is Worth?</h2>
+          <p>I'll run a school-zone-adjusted CMA for your home — no cost, no obligation. Call or text anytime.</p>
+          <a href="tel:9177050132">(917) 705-0132 — Call Nitin</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer style="background:#0F1A40;color:rgba(255,255,255,0.7);padding:3rem 0 1.5rem;">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px;">Nitin <span style="color:#00A651;">Gadura</span></div>
+        <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;">Real Estate Agent</div>
+        <p>Licensed NYS Real Estate Salesperson at Gadura Real Estate LLC. Queens, Brooklyn &amp; Long Island.</p>
+        <a href="tel:9177050132" style="color:#00A651;font-size:1.15rem;font-weight:700;display:block;margin-top:16px;">(917) 705-0132</a>
+      </div>
+      <div><h4>Resources</h4><ul>
+        <li><a href="/resources/ny-home-seller-legal-checklist.html">Seller Legal Checklist</a></li>
+        <li><a href="/resources/queens-school-districts-home-values.html">Schools &amp; Home Values</a></li>
+        <li><a href="/resources/queens-first-time-homebuyer-programs.html">First-Time Buyer Programs</a></li>
+        <li><a href="/resources/queens-real-estate-glossary.html">Real Estate Glossary</a></li>
+      </ul></div>
+      <div><h4>Quick Links</h4><ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/situations/">Seller Situations</a></li>
+        <li><a href="/selling/">Selling Guides</a></li>
+        <li><a href="/zip-codes/">Zip Codes</a></li>
+        <li><a href="https://gadurarealestate.com" target="_blank">Gadura Real Estate</a></li>
+      </ul></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.12);padding-top:1.4rem;margin-top:2rem;font-size:0.8rem;color:rgba(255,255,255,0.55);line-height:1.7;">
+      <strong style="color:rgba(255,255,255,0.78);">Equal Housing Opportunity.</strong>
+      Nitin K. Gadura, Licensed NYS Real Estate Salesperson (Lic. #10401383405), supervised by Vinod K. Gadura (Lic. #10991238487) &middot; Gadura Real Estate LLC, 106-09 101st Ave, Ozone Park, NY 11416 &middot;
+      Agency Disclosure (NY RPL §443) &middot; PCDS (NY RPL §462) &middot; Lead Paint (42 U.S.C. §4852d) &middot; NAR Settlement (2024) &middot; Fair Housing (NY Exec Law §296)
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Nitin Gadura. All rights reserved.</p></div>
+  </div>
+</footer>
+<script>
+  document.getElementById('hamburger')?.addEventListener('click',()=>document.getElementById('mobile-nav').classList.add('open'));
+  document.getElementById('close-nav')?.addEventListener('click',()=>document.getElementById('mobile-nav').classList.remove('open'));
+</script>
+</body>
+</html>
