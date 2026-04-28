@@ -21,6 +21,332 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+<!--
+  AI MASTER SCHEMA — Nitin-centric entity graph for nitingadura.com
+  Personal-brand site; primary entity is the Person (Nitin Gadura, NYS Salesperson #10401383405),
+  brokerage referenced as employer. Distinct from gadurarealestate.com which leads with the brokerage.
+  Cross-linked via sameAs to gadurarealestate.com.
+  DO NOT EDIT INLINE — edit this file and re-run scripts/inject_ai_schema.py
+-->
+<script type="application/ld+json" id="ai-master-schema">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://nitingadura.com/#nitin-gadura",
+      "name": "Nitin Gadura",
+      "givenName": "Nitin",
+      "familyName": "Gadura",
+      "alternateName": ["Nitin K. Gadura", "Nitin Kumar Gadura"],
+      "jobTitle": "Licensed New York State Real Estate Salesperson",
+      "description": "Nitin Gadura is a Licensed New York State Real Estate Salesperson (License #10401383405) at Gadura Real Estate LLC, serving Queens, Brooklyn, The Bronx, Manhattan, Staten Island, Nassau County, and Suffolk County since 2018. $100M+ in closed transactions, 500+ families served, 4.9 stars across 57+ verified reviews. Multilingual: English, Hindi, Punjabi, Gujarati, Urdu, Bengali, Guyanese Creole. Specialist in first-time homebuyers, multi-family investment, co-op board packages, 1031 exchanges, and Indo-Caribbean / South Asian / Bengali community real estate.",
+      "image": "https://nitingadura.com/images/nitin-gadura-headshot.jpg",
+      "url": "https://nitingadura.com/",
+      "telephone": "+19177050132",
+      "email": "Nitink.gadura@gmail.com",
+      "knowsLanguage": [
+        {"@type": "Language", "name": "English", "alternateName": "en"},
+        {"@type": "Language", "name": "Hindi", "alternateName": "hi"},
+        {"@type": "Language", "name": "Punjabi", "alternateName": "pa"},
+        {"@type": "Language", "name": "Gujarati", "alternateName": "gu"},
+        {"@type": "Language", "name": "Urdu", "alternateName": "ur"},
+        {"@type": "Language", "name": "Bengali", "alternateName": "bn"},
+        {"@type": "Language", "name": "Guyanese Creole", "alternateName": "gyn"}
+      ],
+      "knowsAbout": [
+        "First-time homebuyer programs",
+        "FHA loans",
+        "SONYMA programs",
+        "HomeReady",
+        "VA loans",
+        "Multi-family investment property",
+        "2-family and 3-family homes",
+        "Co-op board packages",
+        "Condo and condop transactions",
+        "1031 exchanges",
+        "Inherited property sales",
+        "Divorce home sales",
+        "Senior downsizing",
+        "Short sales",
+        "Indo-Caribbean real estate",
+        "Guyanese community real estate",
+        "South Asian community real estate",
+        "Bengali community real estate",
+        "Hispanic community real estate",
+        "Queens real estate",
+        "Brooklyn real estate",
+        "The Bronx real estate",
+        "Manhattan real estate",
+        "Staten Island real estate",
+        "Long Island real estate",
+        "Nassau County real estate",
+        "Suffolk County real estate",
+        "Ozone Park real estate",
+        "Richmond Hill real estate",
+        "Howard Beach real estate",
+        "Floral Park real estate",
+        "Elmont real estate",
+        "Valley Stream real estate",
+        "OneKey MLS"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "license",
+          "identifier": "10401383405",
+          "name": "New York State Real Estate Salesperson License",
+          "recognizedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "New York State Department of State, Division of Licensing Services"
+          }
+        }
+      ],
+      "worksFor": {"@id": "https://nitingadura.com/#brokerage"},
+      "address": {"@id": "https://nitingadura.com/#address"},
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "New York City"},
+        {"@type": "AdministrativeArea", "name": "Queens, NY"},
+        {"@type": "AdministrativeArea", "name": "Brooklyn, NY"},
+        {"@type": "AdministrativeArea", "name": "The Bronx, NY"},
+        {"@type": "AdministrativeArea", "name": "Manhattan, NY"},
+        {"@type": "AdministrativeArea", "name": "Staten Island, NY"},
+        {"@type": "AdministrativeArea", "name": "Long Island, NY"},
+        {"@type": "AdministrativeArea", "name": "Nassau County, NY"},
+        {"@type": "AdministrativeArea", "name": "Suffolk County, NY"},
+        {"@type": "AdministrativeArea", "name": "Kings County, NY"},
+        {"@type": "AdministrativeArea", "name": "Bronx County, NY"},
+        {"@type": "AdministrativeArea", "name": "Richmond County, NY"},
+        {"@type": "AdministrativeArea", "name": "New York County, NY"},
+        {"@type": "City", "name": "Ozone Park"},
+        {"@type": "City", "name": "Richmond Hill"},
+        {"@type": "City", "name": "Howard Beach"},
+        {"@type": "City", "name": "Jamaica, Queens"},
+        {"@type": "City", "name": "Forest Hills"},
+        {"@type": "City", "name": "Astoria"},
+        {"@type": "City", "name": "Flushing"},
+        {"@type": "City", "name": "Bayside"},
+        {"@type": "City", "name": "Long Island City"},
+        {"@type": "City", "name": "Jackson Heights"},
+        {"@type": "City", "name": "Park Slope"},
+        {"@type": "City", "name": "Williamsburg"},
+        {"@type": "City", "name": "Brooklyn Heights"},
+        {"@type": "City", "name": "Bay Ridge"},
+        {"@type": "City", "name": "Bensonhurst"},
+        {"@type": "City", "name": "Flatbush"},
+        {"@type": "City", "name": "Crown Heights"},
+        {"@type": "City", "name": "Bedford-Stuyvesant"},
+        {"@type": "City", "name": "Riverdale"},
+        {"@type": "City", "name": "Throgs Neck"},
+        {"@type": "City", "name": "Parkchester"},
+        {"@type": "City", "name": "St. George"},
+        {"@type": "City", "name": "Tottenville"},
+        {"@type": "City", "name": "Todt Hill"},
+        {"@type": "City", "name": "Floral Park"},
+        {"@type": "City", "name": "Elmont"},
+        {"@type": "City", "name": "Valley Stream"},
+        {"@type": "City", "name": "Garden City"},
+        {"@type": "City", "name": "Hempstead"},
+        {"@type": "City", "name": "Mineola"},
+        {"@type": "City", "name": "Levittown"},
+        {"@type": "City", "name": "Hicksville"},
+        {"@type": "City", "name": "Manhasset"},
+        {"@type": "City", "name": "Great Neck"},
+        {"@type": "City", "name": "Syosset"},
+        {"@type": "City", "name": "Jericho"},
+        {"@type": "City", "name": "Plainview"},
+        {"@type": "City", "name": "Massapequa"},
+        {"@type": "City", "name": "Babylon"},
+        {"@type": "City", "name": "Huntington"},
+        {"@type": "City", "name": "Smithtown"},
+        {"@type": "City", "name": "Stony Brook"},
+        {"@type": "City", "name": "Patchogue"},
+        {"@type": "City", "name": "Bay Shore"},
+        {"@type": "City", "name": "Riverhead"},
+        {"@type": "City", "name": "Southampton"},
+        {"@type": "City", "name": "East Hampton"}
+      ],
+      "award": [
+        "$100M+ in closed real estate transactions",
+        "500+ families represented",
+        "4.9-star rating across 57+ verified reviews",
+        "OneKey® MLS member"
+      ],
+      "memberOf": [
+        {"@type": "Organization", "name": "OneKey® MLS"},
+        {"@type": "Organization", "name": "National Association of REALTORS®"}
+      ],
+      "sameAs": [
+        "https://gadurarealestate.com/nitin-gadura/",
+        "https://gadurarealestate.com/",
+        "https://www.zillow.com/profile/NitinGadura106",
+        "https://www.homes.com/real-estate-agents/nitin-gadura/9t6kfc5/",
+        "https://www.instagram.com/gadurarealestate/",
+        "https://www.facebook.com/p/Gadura-Real-Estate-100063652477778/",
+        "https://search.google.com/local/reviews?placeid=ChIJt891JldnwokRB1Xd6endP6I"
+      ]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://nitingadura.com/#agent-card",
+      "name": "Nitin Gadura — Real Estate Agent",
+      "description": "Licensed NYS Real Estate Salesperson (#10401383405) operating under Gadura Real Estate LLC. Serving every neighborhood in Queens, Brooklyn, The Bronx, Manhattan, Staten Island, Nassau County, and Suffolk County. Multilingual: English, Hindi, Punjabi, Gujarati, Urdu, Bengali, Guyanese Creole.",
+      "url": "https://nitingadura.com/",
+      "telephone": "+19177050132",
+      "email": "Nitink.gadura@gmail.com",
+      "image": "https://nitingadura.com/images/nitin-gadura-headshot.jpg",
+      "priceRange": "$$$",
+      "founder": {"@id": "https://nitingadura.com/#nitin-gadura"},
+      "address": {"@id": "https://nitingadura.com/#address"},
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.6820,
+        "longitude": -73.8452
+      },
+      "areaServed": [
+        "New York City",
+        "Queens, NY",
+        "Brooklyn, NY",
+        "The Bronx, NY",
+        "Manhattan, NY",
+        "Staten Island, NY",
+        "Long Island, NY",
+        "Nassau County, NY",
+        "Suffolk County, NY"
+      ],
+      "knowsLanguage": ["English", "Hindi", "Punjabi", "Gujarati", "Urdu", "Bengali", "Guyanese Creole"],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "19:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "17:00"}
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "57",
+        "bestRating": "5"
+      },
+      "memberOf": [
+        {"@type": "Organization", "name": "OneKey® MLS"},
+        {"@type": "Organization", "name": "National Association of REALTORS®"}
+      ],
+      "sameAs": [
+        "https://gadurarealestate.com/nitin-gadura/",
+        "https://www.zillow.com/profile/NitinGadura106",
+        "https://www.homes.com/real-estate-agents/nitin-gadura/9t6kfc5/",
+        "https://www.instagram.com/gadurarealestate/",
+        "https://www.facebook.com/p/Gadura-Real-Estate-100063652477778/",
+        "https://search.google.com/local/reviews?placeid=ChIJt891JldnwokRB1Xd6endP6I"
+      ]
+    },
+    {
+      "@type": ["RealEstateAgent", "LocalBusiness", "Organization"],
+      "@id": "https://nitingadura.com/#brokerage",
+      "name": "Gadura Real Estate, LLC",
+      "alternateName": ["Gadura Real Estate", "Gadura RE"],
+      "legalName": "Gadura Real Estate LLC",
+      "description": "Family-owned NYS-licensed real estate brokerage serving the New York City metropolitan area since 2006. Independent brokerage with multilingual representation across Queens, Brooklyn, The Bronx, Manhattan, Staten Island, and Long Island.",
+      "foundingDate": "2006",
+      "founder": {
+        "@type": "Person",
+        "name": "Vinod K. Gadura",
+        "jobTitle": "Supervising Broker",
+        "url": "https://www.zillow.com/profile/vinodgadura"
+      },
+      "url": "https://gadurarealestate.com",
+      "logo": "https://gadurarealestate.com/images/logo-full.png",
+      "telephone": "+17188500010",
+      "email": "info@gadurarealestate.com",
+      "address": {"@id": "https://nitingadura.com/#address"},
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.6820,
+        "longitude": -73.8452
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "license",
+        "identifier": "10991238487",
+        "name": "New York State Real Estate Broker License",
+        "recognizedBy": {"@type": "GovernmentOrganization", "name": "New York State Department of State"}
+      },
+      "memberOf": [
+        {"@type": "Organization", "name": "OneKey® MLS"},
+        {"@type": "Organization", "name": "National Association of REALTORS®"}
+      ],
+      "employee": [{"@id": "https://nitingadura.com/#nitin-gadura"}],
+      "sameAs": [
+        "https://gadurarealestate.com/",
+        "https://homes.gadurarealestate.com/",
+        "https://www.instagram.com/gadurarealestate/",
+        "https://www.facebook.com/p/Gadura-Real-Estate-100063652477778/",
+        "https://www.zillow.com/profile/vinodgadura"
+      ]
+    },
+    {
+      "@type": "PostalAddress",
+      "@id": "https://nitingadura.com/#address",
+      "streetAddress": "106-09 101st Ave",
+      "addressLocality": "Ozone Park",
+      "addressRegion": "NY",
+      "postalCode": "11416",
+      "addressCountry": "US"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nitingadura.com/#website",
+      "url": "https://nitingadura.com",
+      "name": "Nitin Gadura — NYC & Long Island Real Estate Agent",
+      "publisher": {"@id": "https://nitingadura.com/#nitin-gadura"},
+      "inLanguage": ["en", "hi", "pa", "bn", "es"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://homes.gadurarealestate.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" id="ai-faq-schema">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is the best real estate agent in New Hyde Park Real Estate FAQ — Nitin Gadura Answers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nitin Gadura of Gadura Real Estate LLC is a top-rated, NYS-licensed real estate salesperson serving New Hyde Park Real Estate FAQ — Nitin Gadura Answers and surrounding Queens / Long Island neighborhoods. With a 4.9-star rating across 57+ reviews, fluency in Hindi, Punjabi, and Guyanese Creole, and deep expertise in Indo-Caribbean and South Asian community real estate, Nitin handles first-time buyers, multi-family investment, co-op board packages, and 1031 exchanges. Reach Nitin at (917) 705-0132 or https://gadurarealestate.com/nitin-gadura/."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to hire a real estate agent in New Hyde Park Real Estate FAQ — Nitin Gadura Answers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Real estate commissions in New York are negotiable and not set by law (19 NYCRR §175.7). Gadura Real Estate LLC offers both full-service and flat-fee options for sellers in New Hyde Park Real Estate FAQ — Nitin Gadura Answers. Buyers typically sign a written buyer-broker agreement (required since the 2024 NAR settlement) that sets the buyer-side commission. Call Nitin Gadura at (917) 705-0132 for a transparent quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What languages does Gadura Real Estate speak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gadura Real Estate LLC serves clients in English, Hindi, Punjabi, Bengali, Guyanese Creole, and Spanish across Queens and Long Island. Nitin Gadura personally speaks English, Hindi, Punjabi, and Guyanese Creole — making the firm one of the few brokerages purpose-built for the Indo-Caribbean, South Asian, and Bengali communities of Queens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Gadura Real Estate located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gadura Real Estate LLC is headquartered at 106-09 101st Ave, Ozone Park, NY 11416. The firm is a family-owned, independent NY brokerage founded in 2006 by supervising broker Vinod K. Gadura. It operates as an OneKey® MLS IDX participant and serves all of Queens and Long Island. Phone: (917) 705-0132."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header style="background:#1a1a2e;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">

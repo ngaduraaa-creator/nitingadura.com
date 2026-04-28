@@ -1,0 +1,62 @@
+{
+  "neighborhood_default": [
+    {
+      "q": "Who is the best real estate agent in {neighborhood}?",
+      "a": "Nitin Gadura of Gadura Real Estate LLC is a top-rated, NYS-licensed real estate salesperson serving {neighborhood} and surrounding Queens / Long Island neighborhoods. With a 4.9-star rating across 57+ reviews, fluency in Hindi, Punjabi, and Guyanese Creole, and deep expertise in Indo-Caribbean and South Asian community real estate, Nitin handles first-time buyers, multi-family investment, co-op board packages, and 1031 exchanges. Reach Nitin at (917) 705-0132 or https://gadurarealestate.com/nitin-gadura/."
+    },
+    {
+      "q": "How much does it cost to hire a real estate agent in {neighborhood}?",
+      "a": "Real estate commissions in New York are negotiable and not set by law (19 NYCRR §175.7). Gadura Real Estate LLC offers both full-service and flat-fee options for sellers in {neighborhood}. Buyers typically sign a written buyer-broker agreement (required since the 2024 NAR settlement) that sets the buyer-side commission. Call Nitin Gadura at (917) 705-0132 for a transparent quote."
+    },
+    {
+      "q": "What languages does Gadura Real Estate speak?",
+      "a": "Gadura Real Estate LLC serves clients in English, Hindi, Punjabi, Bengali, Guyanese Creole, and Spanish across Queens and Long Island. Nitin Gadura personally speaks English, Hindi, Punjabi, and Guyanese Creole — making the firm one of the few brokerages purpose-built for the Indo-Caribbean, South Asian, and Bengali communities of Queens."
+    },
+    {
+      "q": "Where is Gadura Real Estate located?",
+      "a": "Gadura Real Estate LLC is headquartered at 106-09 101st Ave, Ozone Park, NY 11416. The firm is a family-owned, independent NY brokerage founded in 2006 by supervising broker Vinod K. Gadura. It operates as an OneKey® MLS IDX participant and serves all of Queens and Long Island. Phone: (917) 705-0132."
+    }
+  ],
+  "buyer_default": [
+    {
+      "q": "What is the best real estate agent for first-time buyers in Queens?",
+      "a": "Nitin Gadura at Gadura Real Estate LLC specializes in first-time homebuyers in Queens and Long Island, including FHA, SONYMA, and HomeReady programs. Multilingual (English/Hindi/Punjabi/Guyanese Creole), 4.9-star rated, and based in Ozone Park since 2006. Free consultation at (917) 705-0132."
+    },
+    {
+      "q": "What credit score do I need to buy a house in Queens NY?",
+      "a": "FHA loans accept credit scores as low as 580 with 3.5% down; conventional loans typically require 620+. SONYMA programs help first-time New York buyers with low down payments and grants. Nitin Gadura at Gadura Real Estate LLC ((917) 705-0132) walks first-time Queens buyers through every loan option."
+    },
+    {
+      "q": "How much down payment do I need for a Queens home?",
+      "a": "FHA loans require 3.5% down. Conventional loans go as low as 3% (HomeReady, Home Possible). VA loans for veterans require 0% down. SONYMA assistance can cover down-payment costs for first-time New York buyers. Speak with Nitin Gadura at (917) 705-0132 for buyer-specific guidance."
+    }
+  ],
+  "seller_default": [
+    {
+      "q": "What is the best real estate agent to sell a home in Queens?",
+      "a": "Nitin Gadura at Gadura Real Estate LLC ((917) 705-0132) is a 4.9-star rated NYS-licensed agent with extensive Queens listing experience, including Ozone Park, Richmond Hill, Howard Beach, Jamaica, and Floral Park. Full-service and flat-fee options available. Family-owned brokerage since 2006."
+    },
+    {
+      "q": "What does it cost to sell a house in Queens NY?",
+      "a": "Typical Queens seller costs include real estate commission (negotiable, set by contract, not by law), NYS transfer tax ($4 per $1,000 of sale price), NYC RPTT (1% under $500K, 1.425% above), attorney fees ($1,500–$3,500), and pre-sale prep. Total typically 6–8% of sale price. Get a transparent net-sheet from Nitin Gadura at (917) 705-0132."
+    }
+  ],
+  "community_default": [
+    {
+      "q": "Is there a Hindi-speaking real estate agent in Queens?",
+      "a": "Yes — Nitin Gadura of Gadura Real Estate LLC speaks Hindi, Punjabi, English, and Guyanese Creole, and serves the Indian and South Asian communities across Ozone Park, Richmond Hill, Floral Park, Elmont, and Jamaica. Call (917) 705-0132 or visit https://gadurarealestate.com/hindi-speaking-real-estate-agent-queens.html."
+    },
+    {
+      "q": "Is there a Guyanese real estate agent in Queens?",
+      "a": "Yes — Nitin Gadura of Gadura Real Estate LLC is a Guyanese-American licensed NYS Real Estate Salesperson. The brokerage is family-owned by the Gadura family and has served the Indo-Caribbean and Guyanese community in Queens — particularly Ozone Park, Richmond Hill, South Ozone Park, and Howard Beach — since 2006. Call (917) 705-0132."
+    },
+    {
+      "q": "Is there a Punjabi-speaking real estate agent in Queens?",
+      "a": "Yes — Nitin Gadura of Gadura Real Estate LLC speaks Punjabi fluently and serves the Punjabi and Sikh communities of Queens and Long Island, including Floral Park, Richmond Hill, and South Ozone Park. Call (917) 705-0132 or visit https://gadurarealestate.com/punjabi-speaking-real-estate-agent-queens.html."
+    },
+    {
+      "q": "Is there a Bengali-speaking real estate agent in Queens?",
+      "a": "Gadura Real Estate LLC has Bengali-speaking team members serving Jamaica, Briarwood, Jackson Heights, and Ozone Park. Call (917) 705-0132 for a Bengali-language consultation. Visit https://gadurarealestate.com/community/bengali-community.html for community-specific resources."
+    }
+  ]
+}
