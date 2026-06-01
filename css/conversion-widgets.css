@@ -1,0 +1,478 @@
+/* =============================================================
+   GADURA REAL ESTATE — CONVERSION WIDGETS
+   WhatsApp float, trust badges, urgency bar, exit overlay
+   Uses site tokens from style.css (:root custom properties)
+   ============================================================= */
+
+/* --- Local tokens for this sheet ----------------------------- */
+:root {
+  --wa-green:          #25D366;
+  --wa-green-hover:    #1da851;
+  --wa-size:           56px;
+
+  --urgency-from:      var(--navy-dark, #0f1a44);
+  --urgency-to:        var(--green-dark, #007d3c);
+  --urgency-height:    38px;
+
+  --overlay-backdrop:  rgba(11, 16, 48, 0.72);
+  --overlay-card-max:  460px;
+
+  --badge-bg:          var(--light-gray, #f0f2f5);
+  --badge-text:        var(--text-muted, #5c6475);
+  --badge-icon:        var(--green, #00A651);
+}
+
+
+/* =============================================================
+   1. WHATSAPP FLOATING BUTTON
+   ============================================================= */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 9998;
+  width: var(--wa-size);
+  height: var(--wa-size);
+  border-radius: 50%;
+  background: var(--wa-green);
+  color: var(--white, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.45);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: waPulse 2s ease-in-out 1s 3;
+}
+
+.whatsapp-float svg,
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.12);
+  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.6);
+  background: var(--wa-green-hover);
+}
+
+.whatsapp-float:focus-visible {
+  outline: 2px solid var(--white, #fff);
+  outline-offset: 3px;
+}
+
+/* Pulse keyframes — three gentle rings then stop */
+@keyframes waPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+  70%  { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Tooltip that appears on hover */
+.whatsapp-float .wa-tooltip {
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--near-black, #111827);
+  color: var(--white, #fff);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: var(--radius, 3px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.whatsapp-float:hover .wa-tooltip {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 80px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-float svg,
+  .whatsapp-float img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .whatsapp-float .wa-tooltip {
+    display: none;
+  }
+}
+
+
+/* =============================================================
+   2. TRUST BADGE BAR
+   ============================================================= */
+
+.trust-badges {
+  background: var(--badge-bg);
+  border-top: 1px solid var(--border, #dde3ec);
+  border-bottom: 1px solid var(--border, #dde3ec);
+  padding: 16px 24px;
+}
+
+.trust-badges__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trust-badges__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text, #1a1a2e);
+  letter-spacing: 0.02em;
+  padding: 4px 0;
+}
+
+.trust-badges__item svg,
+.trust-badges__item img,
+.trust-badges__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--badge-icon);
+}
+
+/* Separator dot between badges — desktop only */
+.trust-badges__item + .trust-badges__item::before {
+  content: "\00B7";
+  display: inline-block;
+  margin: 0 18px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--mid-gray, #8a94a6);
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .trust-badges {
+    padding: 14px 16px;
+  }
+
+  .trust-badges__inner {
+    gap: 6px 0;
+    justify-content: center;
+  }
+
+  .trust-badges__item {
+    flex: 0 0 50%;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 5px 0;
+  }
+
+  /* Hide separator dots on mobile — layout wraps */
+  .trust-badges__item + .trust-badges__item::before {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .trust-badges__item {
+    flex: 0 0 100%;
+  }
+}
+
+
+/* =============================================================
+   3. URGENCY BANNER
+   ============================================================= */
+
+.urgency-bar {
+  width: 100%;
+  min-height: var(--urgency-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 48px 8px 24px;
+  background: linear-gradient(92deg, var(--urgency-from), var(--urgency-to));
+  background-size: 200% 100%;
+  animation: urgencyShimmer 6s ease-in-out infinite;
+  position: relative;
+  z-index: 10000;
+}
+
+.urgency-bar__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--white, #fff);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.urgency-bar__text a {
+  color: var(--white, #fff);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.urgency-bar__text a:hover {
+  opacity: 0.85;
+}
+
+/* Dismiss button */
+.urgency-bar__close {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 4px 6px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.urgency-bar__close:hover {
+  color: var(--white, #fff);
+}
+
+.urgency-bar__close:focus-visible {
+  outline: 2px solid var(--white, #fff);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Hidden state after JS dismissal */
+.urgency-bar.is-dismissed {
+  display: none;
+}
+
+@keyframes urgencyShimmer {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 768px) {
+  .urgency-bar {
+    padding: 7px 40px 7px 14px;
+  }
+
+  .urgency-bar__text {
+    font-size: 0.72rem;
+  }
+
+  .urgency-bar__close {
+    right: 8px;
+    font-size: 0.95rem;
+  }
+}
+
+
+/* =============================================================
+   4. EXIT INTENT OVERLAY
+   ============================================================= */
+
+.exit-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--overlay-backdrop);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.exit-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Card */
+.exit-overlay__card {
+  position: relative;
+  width: 92%;
+  max-width: var(--overlay-card-max);
+  background: var(--white, #fff);
+  border-radius: var(--radius-lg, 6px);
+  box-shadow: var(--shadow-lg, 0 10px 40px rgba(27, 42, 107, 0.16));
+  padding: 40px 36px 36px;
+  text-align: center;
+  transform: translateY(-30px);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.exit-overlay.is-active .exit-overlay__card {
+  transform: translateY(0);
+}
+
+/* Close button */
+.exit-overlay__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-gray, #f0f2f5);
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: var(--text-muted, #5c6475);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.exit-overlay__close:hover {
+  background: var(--border, #dde3ec);
+  color: var(--near-black, #111827);
+}
+
+.exit-overlay__close:focus-visible {
+  outline: 2px solid var(--green, #00A651);
+  outline-offset: 2px;
+}
+
+/* Heading */
+.exit-overlay__heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: var(--navy, #1B2A6B);
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+/* Subtext */
+.exit-overlay__sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  color: var(--text-muted, #5c6475);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Phone CTA */
+.exit-overlay__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--green, #00A651);
+  margin-bottom: 18px;
+}
+
+.exit-overlay__phone svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* CTA button inside overlay */
+.exit-overlay__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 320px;
+  padding: 14px 28px;
+  background: var(--green, #00A651);
+  color: var(--white, #fff);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius, 3px);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.exit-overlay__cta:hover {
+  background: var(--green-dark, #007d3c);
+  transform: translateY(-1px);
+}
+
+.exit-overlay__cta:focus-visible {
+  outline: 2px solid var(--navy, #1B2A6B);
+  outline-offset: 2px;
+}
+
+/* Fine print */
+.exit-overlay__fine {
+  margin-top: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  color: var(--mid-gray, #8a94a6);
+}
+
+@media (max-width: 768px) {
+  .exit-overlay__card {
+    padding: 32px 22px 28px;
+  }
+
+  .exit-overlay__heading {
+    font-size: 1.3rem;
+  }
+
+  .exit-overlay__sub {
+    font-size: 0.85rem;
+  }
+
+  .exit-overlay__phone {
+    font-size: 1.05rem;
+  }
+}
+
+
+/* =============================================================
+   REDUCED MOTION
+   ============================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float {
+    animation: none;
+  }
+
+  .urgency-bar {
+    animation: none;
+    background-size: 100% 100%;
+  }
+
+  .exit-overlay,
+  .exit-overlay__card {
+    transition: none;
+  }
+}
